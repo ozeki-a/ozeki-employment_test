@@ -7,7 +7,8 @@ module.exports = {
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'assets/[hash][ext][query]'  // 追加
   },
   resolve: {
     alias: {
@@ -22,10 +23,10 @@ module.exports = {
         use: 'svg-url-loader'
       },
       {
-        test: /\.png$/,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]'
+          filename: 'assets/images/[hash][ext][query]'  // 画像の出力先を指定
         }
       },
       {
