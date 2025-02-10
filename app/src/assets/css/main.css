@@ -5,9 +5,11 @@
 }
 
 [data-theme='light'] {
-  --background: #ffffff;
+  --body-background: #ffffff;
   --main-text: #000000;
   --link-color: #0451a5;
+  --border-color: #e0e0e0;
+  --sidebar-background: #f5f5f5;
 }
 
 body {
