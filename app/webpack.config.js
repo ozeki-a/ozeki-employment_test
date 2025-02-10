@@ -18,16 +18,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.svg$/,
-        use: 'svg-url-loader'
-      },
-      {
-        test: /\.png$/,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
         }
       },
+      {
+        test: /\.md$/,
+        use: 'raw-loader'
+      },      
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
