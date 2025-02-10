@@ -23,6 +23,7 @@ import '@/assets/css/object.css'
     <header class="l-header">
       <h1>ヘッダー</h1>
       <SocialIcons />
+      <ToggleTheme />
     </header>
 
     <main class="l-main">
@@ -31,12 +32,14 @@ import '@/assets/css/object.css'
     </main>
 
     <footer class="l-footer">
-      <p>フッター</p>
+      <p class="l-footer__title">フッター</p>
+      <p class="l-footer__copy">©︎2025 Aya Ozeki.</p>
     </footer>
   </div>
 </template>
 
 <script>
+import ToggleTheme from "@/components/atoms/ToggleTheme.vue";
 import SocialIcons from "@/components/molecules/SocialIcons.vue";
 import AboutSection from "@/components/organisms/AboutSection.vue";
 import NewsList from "@/components/organisms/NewsList.vue";

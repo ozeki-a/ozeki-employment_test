@@ -32,6 +32,7 @@ const icons = [
   display: flex;
   justify-content: flex-end; /* 右寄せ */
   gap: 10px;
+  margin: 0 10px 0 auto;
 }
 
 .social-icons img {

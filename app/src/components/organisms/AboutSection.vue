@@ -22,7 +22,8 @@ export default {
 <style scoped>
 .about-section {
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: var(--about-bg);
   border-radius: 8px;
+  color: var(--main-text);
 }
 </style>
