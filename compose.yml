@@ -3,3 +3,9 @@ services:
     build: .
     ports:
       - "3000:3000"
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/dist
+    environment:
+      - HOST=0.0.0.0  # これがアクセスできない問題の解決策
